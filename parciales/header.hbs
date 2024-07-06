@@ -1,0 +1,20 @@
+<section class="pricing-panel">
+    {{#each menuOptions}}
+    <div class="card">
+        <img src="{{imagen}}" alt="Servicio 1">
+        <h3>{{comida}}</h3>
+        <p>{{cantidad}}
+            <span id="contenedor-botones">
+                <button class="restar">{{restar}}</button>
+                <span class="contador">{{contador}}</span>
+                <button class="sumar">{{sumar}}</button>
+            </span>
+        </p>
+        <p>{{PrecioL}} <span>{{boton}}</span></p>
+        <div class="container-details">
+            <button type="submit" id="btn_order">{{ordenar}}</button>
+        </div>
+        <span id="extra-text">{{advertencia}}</span>
+    </div>
+    {{/each}}
+</section>
